@@ -1,0 +1,115 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: black;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.app {
+  max-width: 1250px;
+  margin: 5rem auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.form-control input:not([name="expDate"], [name="cvv"]) {
+  width: 100%;
+}
+
+.form-control select {
+  width: 100%;
+}
+
+.form-control+.form-control {
+  margin-top: 1rem;
+}
+
+.order-summary {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-height: 260px;
+}
+
+.order-table {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: .7rem 0;
+  margin-bottom: 1rem;
+}
+
+.gst-hst {
+  margin-top: 1.3rem;
+}
+
+.total-miles,
+.gst-hst,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui-control-tiles {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.ui-control-tile {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.ui-control-tile.active {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.payment-container {
+  margin-top: 3rem;
+}
+
+.payment-button {
+  background-color: black;
+  color: white;
+  border: 0;
+  outline: 0;
+  padding: 0.8rem 1.6rem;
+  min-width: 70%;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.sort-select {
+  margin-left: 2rem;
+}
